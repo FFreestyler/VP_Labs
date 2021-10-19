@@ -5,6 +5,9 @@ void loadModules(QSplashScreen* psplash) {
     QTime time;
     time.start();
 
+    QRect fmRect = qApp->fontMetrics().boundingRect("Loading modules: 100%");
+    psplash->setPixmap(psplash->pixmap().scaledToWidth(fmRect.width()+20));
+
     for(int i=0;i<100; ) {
         if(time.elapsed()>40) {
             time.start();
@@ -21,7 +24,7 @@ void loadModules(QSplashScreen* psplash) {
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-    QSplashScreen splash(QPixmap("madara.png"));
+    QSplashScreen splash(QPixmap("D:\1.jpg"));
     splash.show();
     SDIProgram w;
     loadModules(&splash);

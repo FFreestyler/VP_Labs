@@ -1,0 +1,38 @@
+QMainWindow {
+    background: #222226;
+}
+
+QWidget {
+    background: #222226;
+}
+
+QTextEdit {
+    background: #737373;
+}
+
+QLabel {
+    color: white;
+}
+
+QRadioButton {
+    color: white;
+}
+
+QDateEdit {
+    background: #737373;
+}
+
+QPushButton {
+    border: 2px solid;
+    background: #737373;
+    border-radius: 12px;
+}
+
+QPushButton:hover {
+    background: #b1b1b3;
+}
+
+QLineEdit {
+    background: #737373;
+    border: 2px solid;
+}

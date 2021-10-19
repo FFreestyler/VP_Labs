@@ -1,6 +1,6 @@
 #-------------------------------------------------
 #
-# Project created by QtCreator 2021-09-14T21:12:26
+# Project created by QtCreator 2021-10-19T18:17:37
 #
 #-------------------------------------------------
 
@@ -8,7 +8,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = lab3
+TARGET = lab6
 TEMPLATE = app
 
 # The following define makes your compiler emit warnings if you use
@@ -25,18 +25,16 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        sdiprogram.cpp \
-    docwindow_menchshikov_ismailov.cpp
+        mainwindow.cpp \
+    menchshikov_ismailov.cpp
 
 HEADERS += \
-        sdiprogram.h \
-    docwindow_menchshikov_ismailov.h
+        mainwindow.h \
+    menchshikov_ismailov.h
 
 FORMS += \
-        sdiprogram.ui
-
-DISTFILES += \
-    1.jpg
+        mainwindow.ui \
+    menchshikov_ismailov.ui
 
 RESOURCES += \
-    res.qrc
+    qrc.qrc
