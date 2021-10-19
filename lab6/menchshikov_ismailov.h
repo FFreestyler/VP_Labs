@@ -21,7 +21,7 @@ private:
     Ui::Menchshikov_Ismailov *ui;
 
 public slots:
-    void recieveDate(QString str);
+    void recieveData(QString str);
 private slots:
     void on_buttonBox_clicked(QAbstractButton *button);
 };

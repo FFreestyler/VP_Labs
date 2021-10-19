@@ -18,7 +18,7 @@ Menchshikov_Ismailov::~Menchshikov_Ismailov()
     delete ui;
 }
 
-void Menchshikov_Ismailov::recieveDate(QString str) {
+void Menchshikov_Ismailov::recieveData(QString str) {
     QStringList lst = str.split("*");
     ui->textEdit->setText(lst.at(1) + "\n" + lst.at(0));
     if(lst.size() > 1) {

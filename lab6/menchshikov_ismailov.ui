@@ -15,7 +15,7 @@
   </property>
   <widget class="QLabel" name="label">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
@@ -31,7 +31,7 @@
   </widget>
   <widget class="QTextEdit" name="textEdit">
    <property name="enabled">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
    <property name="geometry">
     <rect>
