@@ -41,12 +41,18 @@ void Menchshikov_Ismailov::on_buttonBox_clicked(QAbstractButton *button)
     }
     else if (button->text() == "Open") {
         QString fileName = QFileDialog::getOpenFileName(0, "Открыть файл", QDir::currentPath(), "*.txt");
-        QFile file(fileName);
-        if (file.open(QIODevice::ReadOnly | QIODevice::Text))
-        {
-            ui->textEdit->setPlainText(file.readAll());
-            QStringList lst = ui->textEdit->toPlainText().split("\n");
-
-        }
+                QFile file(fileName);
+                if (file.open(QIODevice::ReadOnly | QIODevice::Text))
+                {
+                    ui->textEdit->setPlainText(file.readAll());
+                    QStringList lst = ui->textEdit->toPlainText().split("\n");
+                    QImage photo(lst.at(4));
+                    if (photo.isNull()){
+                        return;
+                    }
+                    QPixmap photoPixmap(QPixmap::fromImage(photo).scaled(ui->label->width(), ui->label->maximumHeight(), Qt::KeepAspectRatio));
+                    ui->label->setPixmap(photoPixmap);
+                    ui->label->resize(photoPixmap.width(), photoPixmap.height());
+                }
     }
 }
