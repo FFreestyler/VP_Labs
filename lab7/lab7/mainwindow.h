@@ -14,6 +14,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
+    QGraphicsScene* scene;
     QGraphicsPixmapItem* human;
     QGraphicsItemGroup* phone;
     QList<QGraphicsRectItem*>* borders;
@@ -24,12 +25,11 @@ public:
 
 public slots:
     void moveAndCheck();
-    void resizeTrigger();
+    void borderCheck();
 
 private:
     QMap<QString, QGraphicsProxyWidget*> elements;
     Ui::MainWindow *ui;
-    void resizeEvent(QResizeEvent *);
 };
 
 #endif // MAINWINDOW_H

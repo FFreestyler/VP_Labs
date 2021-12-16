@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QtHelpProject version="1.0">
+   <namespace>mangrimen.diary.1.0</namespace>
+   <virtualFolder>doc</virtualFolder>
+   <customFilter name="Электронный ежедневник рабочего студента">
+      <filterAttribute>diary</filterAttribute>
+      <filterAttribute>1.0</filterAttribute>
+   </customFilter>
+   <filterSection>
+      <filterAttribute>diary</filterAttribute>
+      <filterAttribute>1.0</filterAttribute>
+      <toc>
+         <section title="Справка о приложении" ref="help/index.html">
+            <section title="Навигация" ref="help/navigation.html" />
+            <section title="Вкладка: Неделя" ref="help/weekTab.html" />
+            <section title="Вкладка: Дела" ref="help/affairsTab.html" />
+            <section title="Вкладка: Формирование" ref="help/formingTab.html" />
+            <section title="Страница редактирования" ref="help/editPage.html" />
+         </section>
+      </toc>
+      <files>
+         <file>help/*.html</file>
+         <file>help/*.ico</file>
+         <file>help/*.png</file>
+         <file>help/*.css</file>
+      </files>
+   </filterSection>
+</QtHelpProject>
